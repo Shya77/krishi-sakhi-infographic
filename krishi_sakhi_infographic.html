@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Sakhi App Flowchart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .flow-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .flow-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .arrow {
+            color: #4ECDC4;
+        }
+    </style>
+</head>
+<body class="bg-[#F7FFF7]">
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#1A535C]">Krishi Sakhi App</h1>
+            <p class="text-lg text-[#1A535C] mt-2">A Farmer's Smart Assistant Workflow</p>
+        </header>
+
+        <main class="flex flex-col items-center">
+            
+            <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md flow-card">
+                <div class="flex items-center">
+                    <div class="text-4xl mr-4">👤</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#1A535C]">Farmer Login / Profile</h2>
+                        <p class="text-gray-600 mt-1">A farmer begins by signing in or creating a profile, then enters key farm details like crop, soil type, irrigation, and land size.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-5xl font-light my-4 arrow">↓</div>
+
+            <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md flow-card">
+                <div class="flex items-center">
+                    <div class="text-4xl mr-4">📱</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#1A535C]">Input Farming Activities</h2>
+                        <p class="text-gray-600 mt-1">The farmer logs daily actions such as sowing, irrigation, and pest sightings using voice (in Malayalam), text, or photos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-5xl font-light my-4 arrow">↓</div>
+
+            <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md flow-card">
+                <div class="flex items-center">
+                    <div class="text-4xl mr-4">🧠</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#1A535C]">AI/NLP Engine</h2>
+                        <p class="text-gray-600 mt-1">The app's intelligent core processes these inputs using AI and Malayalam NLP, checking them against the farm profile, weather data, and more.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-5xl font-light my-4 arrow">↓</div>
+
+            <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md flow-card">
+                <div class="flex items-center">
+                    <div class="text-4xl mr-4">💡</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#FF6B6B]">Generate Personalized Advisory</h2>
+                        <p class="text-gray-600 mt-1">Customized suggestions are generated, like "Rain tomorrow—avoid spraying," along with pest alerts and crop tips.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-5xl font-light my-4 arrow">↓</div>
+
+            <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md flow-card">
+                <div class="flex items-center">
+                    <div class="text-4xl mr-4">🔔</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#1A535C]">Alerts & Reminders</h2>
+                        <p class="text-gray-600 mt-1">Timely push notifications, SMS, or voice alerts are sent for weather changes, pest outbreaks, scheme deadlines, and price trends.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-5xl font-light my-4 arrow">↓</div>
+
+            <div class="w-full max-w-md p-6 bg-white rounded-lg shadow-md flow-card">
+                <div class="flex items-center">
+                    <div class="text-4xl mr-4">📈</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#1A535C]">Record & Learn</h2>
+                        <p class="text-gray-600 mt-1">The app stores the farmer's activity history and learns over time, continuously improving the quality of its recommendations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 w-full max-w-2xl text-center">
+                <h3 class="text-3xl font-bold text-[#1A535C] mb-4">Future Mobile App Features</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-[#45B7D1] text-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg">Offline Mode</h4>
+                        <p class="text-sm">Access key features without an internet connection.</p>
+                    </div>
+                    <div class="bg-[#45B7D1] text-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg">Push Notifications</h4>
+                        <p class="text-sm">Instant, direct-to-device alerts.</p>
+                    </div>
+                    <div class="bg-[#45B7D1] text-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg">Voice-First Interaction</h4>
+                        <p class="text-sm">Enhanced usability through simple voice commands.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="text-center mt-12 text-gray-500 text-sm">
+            <p>This infographic illustrates the workflow of the Krishi Sakhi application.</p>
+        </footer>
+    </div>
+</body>
+</html>
